@@ -71,7 +71,9 @@ values
 create table SpotifyClone.tabela_artista_id_album_id(
 artista_id int not null,
 album_id int not null,
-foreign key (album_id) references SpotifyClone.tabela_album(album_id)
+constraint primary key (artista_id, album_id),
+foreign key (album_id) references SpotifyClone.tabela_album (album_id),
+foreign key (artista_id) references SpotifyClone.tabela_artista(artista_id)
 ) engine = InnoDB;
 
 insert into SpotifyClone.tabela_artista_id_album_id(artista_id, album_id)
