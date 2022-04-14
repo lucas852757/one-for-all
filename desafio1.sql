@@ -51,43 +51,26 @@ values
 
 create table SpotifyClone.tabela_album(
 album_id int primary key auto_increment,
-album varchar(50),
-ano_lancamento year
-) engine = InnoDB;
-
-insert into SpotifyClone.tabela_album(album, ano_lancamento)
-values
-('Envious', '1990'),
-    ('Exuberant', '1993'),
-    ('Hallowed Steam', '1995'),
-    ('Incandescent', '1998'),
-    ('Temporary Culture', '2001'),
-    ('Library of liberty', '2003'),
-    ('Chained Down', '2007'),
-    ('Cabinet of fools', '2012'),
-    ('No guarantees', '2015'),
-    ('Apparatus', '2015');
-
-create table SpotifyClone.tabela_artista_id_album_id(
 artista_id int not null,
-album_id int not null,
-constraint primary key (artista_id, album_id),
-foreign key (album_id) references SpotifyClone.tabela_album (album_id),
-foreign key (artista_id) references SpotifyClone.tabela_artista(artista_id)
+album varchar(50),
+ano_lancamento year,
+foreign key (artista_id) references SpotifyClone.tabela_artista (artista_id)
 ) engine = InnoDB;
 
-insert into SpotifyClone.tabela_artista_id_album_id(artista_id, album_id)
+insert into SpotifyClone.tabela_album(artista_id, album, ano_lancamento)
 values
-(1, 1),
-    (1, 2),
-    (2, 3),
-    (3, 4),
-    (4, 5),
-    (4, 6),
-    (5, 7),
-    (5, 8),
-    (5, 9),
-    (6, 10);
+(1,'Envious', '1990'),
+    (1,'Exuberant', '1993'),
+    (2,'Hallowed Steam', '1995'),
+    (3,'Incandescent', '1998'),
+    (4,'Temporary Culture', '2001'),
+    (4,'Library of liberty', '2003'),
+    (5,'Chained Down', '2007'),
+    (5,'Cabinet of fools', '2012'),
+    (5,'No guarantees', '2015'),
+    (6,'Apparatus', '2015');
+
+
 
 
 create table SpotifyClone.tabela_cancoes(
