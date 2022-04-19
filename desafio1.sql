@@ -84,18 +84,18 @@ duracao_segundos int not null
 insert into SpotifyClone.tabela_cancoes(cancoes, album_id, duracao_segundos)
 values
 ( 'Soul For Us', '1', '200'),
-    ( ' Reflections Of Magic ', '1', '163'),
+    ( 'Reflections Of Magic ', '1', '163'),
     ( 'Dance With Her Own', '1', '116'),
     ( 'Troubles Of My Inner Fire', '2', '203'),
-    ( ' Time Fireworks', '2', '152'),
+    ( 'Time Fireworks', '2', '152'),
     ( 'Magic Circus', '3', '105'),
-    ( ' Honey, So Do I', '3', '207'),
+    ( 'Honey, So Do I', '3', '207'),
     ( 'Sweetie, Let"s Go Wild', '3', '139'),
     ( 'She Knows', '3', '244'),
     ( 'Fantasy For Me', '4', '100'),
     ( 'Celebration Of More', '4', '146'),
     ( 'Rock His Everything', '4', '223'),
-    ( ' Home Forever', '4', '231'),
+    ( 'Home Forever', '4', '231'),
     ( 'Diamond Power', '4', '241'),
     ( 'Let"s Be Silly', '4', '132'),
     ( 'Thang Of Thunder ', '5', '240'),
@@ -103,7 +103,7 @@ values
     ( 'Without My Streets', '5', '176'),
     ( 'Need Of The Evening', '6', '190'),
     ( 'History Of My Roses', '6', '222'),
-    ( ' Without My Love', '6', '111'),
+    ( 'Without My Love', '6', '111'),
     ( 'Walking And Game', '6', '123'),
     ( 'Young And Father', '6', '197'),
     ( 'Finding My Traditions', '7', '179'),
@@ -113,7 +113,7 @@ values
     ( 'She Thinks I Won"t Stay Tonight', '8', '166'),
     ( 'He Heard You"re Bad For Me ', '8', '154'),
     ( 'He Hopes We Can"t Stay', '8', '210'),
-    ( ' I Know I Know', '8', '117'),
+    ( 'I Know I Know', '8', '117'),
     ( 'He"s Walking Away', '9', '159'),
     ( 'He"s Trouble', '9', '138'),
     ( 'I Heard I Want To Bo Alone', '9', '120'),
@@ -121,8 +121,8 @@ values
     ( 'Honey', '10', '79'),
     ( 'You Cheated On Me', '10', '95'),
     ( 'Wouldn"t It Be Nice', '10', '213'),
-    ( ' Baby', '10', '136'),
-    ( ' You Make Me Feel So..', '10', '83');
+    ( 'Baby', '10', '136'),
+    ( 'You Make Me Feel So..', '10', '83');
 
 create table SpotifyClone.tabela_usuario_id_seguindo_artista_id(
 usuario_id int not null,
